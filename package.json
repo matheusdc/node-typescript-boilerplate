@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --no-cache",
     "tsc": "tsc",
+    "tslint": "tslint 'src/**/*.ts'",
     "dev": "nodemon --watch src/ --exec \"ts-node src/index.ts\" -e ts",
     "fast-dev": "ts-node-dev --respawn --transpileOnly src/index.ts",
     "prod": "tsc && node ./build/app.js"
@@ -24,7 +25,8 @@
     "nodemon": "^1.18.10",
     "supertest": "^3.4.2",
     "ts-jest": "^23.10.5",
-    "ts-node-dev": "^1.0.0-pre.32"
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tslint": "^5.12.1"
   },
   "jest": {
     "transform": {
